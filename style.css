@@ -111,11 +111,37 @@ img {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
 }
+
+.logo img {
+  width: 38px;
+  height: auto;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 0.4px;
+}
+
+.logo img,
+.logo span {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo:hover img {
+  transform: rotate(-4deg) scale(1.05);
+}
+
+.logo:hover span {
+  opacity: 0.85;
+}
+
 
 .nav-menu {
   display: flex;
@@ -453,6 +479,17 @@ img {
   .mobile-menu-toggle {
     display: block;
   }
+
+  @media (max-width: 600px) {
+  .logo img {
+    width: 32px;
+  }
+
+  .logo span {
+    font-size: 1.3rem;
+  }
+}
+
 
   .nav-menu {
     display: none;
