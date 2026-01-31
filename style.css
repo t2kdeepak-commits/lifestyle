@@ -480,16 +480,7 @@ img {
     display: block;
   }
 
-  @media (max-width: 600px) {
-  .logo img {
-    width: 32px;
-  }
-
-  .logo span {
-    font-size: 1.3rem;
-  }
-}
-
+ 
 
   .nav-menu {
     display: none;
@@ -531,10 +522,17 @@ img {
   }
 }
 
-@media (max-width: 480px) {
-  html {
-    font-size: 14px;
+@media (max-width: 600px) {
+  .logo img {
+    width: 32px;
   }
+
+  .logo span {
+    font-size: 1.3rem;
+  }
+}
+
+
 
   .nav-container {
     padding: 0 1rem;
