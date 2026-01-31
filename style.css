@@ -285,6 +285,7 @@ img, video, iframe, embed {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  min-height: 320px;
 }
 
 .blog-card:hover {
