@@ -295,7 +295,8 @@ img, video, iframe, embed {
 
 .blog-card img {
   width: 100%;
-  height: 220px;
+  height: auto;
+  max-height:180px;
   object-fit: cover;
   border-radius: 0;
 }
