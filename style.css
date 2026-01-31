@@ -1,5 +1,5 @@
 /* ================================================
-   IntentionalDaily - Optimized Responsive Glassmorphic CSS
+   IntentionalDaily - Ultra Flexible Responsive CSS
    ================================================ */
 
 /* Reset and Base Styles */
@@ -46,13 +46,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   color: var(--color-text-dark);
   word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem; }
 h2 { font-size: clamp(1.5rem, 4vw, 2.25rem); margin-top: 2rem; }
 h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); margin-top: 1.5rem; }
 
-p {
+p, span, li, blockquote {
   margin-bottom: 1.25rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -66,7 +67,7 @@ a {
 
 a:hover { color: var(--color-secondary); }
 
-img {
+img, video, iframe, embed {
   max-width: 100%;
   height: auto;
   display: block;
@@ -97,7 +98,12 @@ img {
   gap: 1rem;
 }
 
-.logo { font-size: 1.5rem; font-weight: 700; color: var(--color-primary); text-decoration: none; }
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
 
 .nav-menu {
   display: flex;
@@ -131,12 +137,12 @@ img {
   color: var(--color-text-dark);
 }
 
-/* Container and Layout */
+/* Container & Flexible Layout */
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 3rem 2rem;
-  width: 100%;
 }
 
 /* Glassmorphic Cards */
@@ -203,31 +209,31 @@ img {
   box-shadow: var(--shadow-hover);
 }
 
-.btn-primary {
-  background: var(--color-primary);
-  color: white;
-  border: none;
-}
-
+.btn-primary { background: var(--color-primary); color: white; border: none; }
 .btn-primary:hover { background: #6AB896; }
 
-/* Grid Layouts */
+/* Grid System (Fully Flexible) */
 .grid {
   display: grid;
   gap: 2rem;
   margin: 2rem 0;
+  width: 100%;
 }
 
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
-/* Content Sections */
+/* Content Sections & Flexible Media */
 .content-section {
   margin: 3rem 0;
   width: 100%;
+  overflow-wrap: break-word;
 }
 
-.content-section img {
+.content-section img,
+.content-section video,
+.content-section iframe,
+.content-section embed {
   margin: 1.5rem 0;
   width: 100%;
   max-width: 100%;
@@ -370,6 +376,10 @@ img {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .grid { gap: 1.5rem; }
+}
+
 @media (max-width: 768px) {
   .mobile-menu-toggle { display: block; }
   .nav-menu { display: none; width: 100%; flex-direction: column; gap: 0; margin-top: 1rem; }
