@@ -36,7 +36,8 @@ body {
   background: var(--color-bg-gradient);
   background-attachment: fixed;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
 }
 
 /* Typography */
@@ -143,6 +144,7 @@ img, video, iframe, embed {
   width: 100%;
   margin: 0 auto;
   padding: 3rem 2rem;
+  box-sizing: border-box;
 }
 
 /* Glassmorphic Cards */
@@ -155,9 +157,11 @@ img, video, iframe, embed {
   padding: 2rem;
   box-shadow: var(--shadow-soft);
   transition: var(--transition-smooth);
-  margin-bottom: 2rem;
+  margin: 1rem auto; /* Centered and spacing */
   overflow: hidden;
   width: 100%;
+  max-width: 400px; /* Wider & responsive */
+  box-sizing: border-box;
 }
 
 .glass-card:hover {
@@ -167,6 +171,7 @@ img, video, iframe, embed {
 
 /* Hero Section */
 .hero {
+  width: 100%;
   text-align: center;
   padding: 4rem 2rem;
   min-height: 60vh;
@@ -174,6 +179,7 @@ img, video, iframe, embed {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .hero h1 { margin-bottom: 1.5rem; }
@@ -184,6 +190,16 @@ img, video, iframe, embed {
   max-width: 700px;
   margin: 0 auto 2rem;
   word-wrap: break-word;
+}
+
+/* Hero Image Fix */
+.hero img, .hero-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 /* Buttons */
@@ -237,6 +253,9 @@ img, video, iframe, embed {
   margin: 1.5rem 0;
   width: 100%;
   max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* Feature Cards */
@@ -284,7 +303,6 @@ img, video, iframe, embed {
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
-  
   min-height: 320px;
 }
 
@@ -381,6 +399,7 @@ img, video, iframe, embed {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .grid { gap: 1.5rem; }
+  .glass-card { max-width: 90%; }
 }
 
 @media (max-width: 768px) {
@@ -389,7 +408,7 @@ img, video, iframe, embed {
   .nav-menu.active { display: flex; }
   .nav-menu a { width: 100%; text-align: center; padding: 1rem; }
   .container { padding: 2rem 1rem; }
-  .glass-card { padding: 1.5rem; }
+  .glass-card { max-width: 95%; padding: 1.5rem; }
   .hero { padding: 3rem 1rem; min-height: 50vh; }
   .page-navigation { flex-direction: column; }
   .nav-link { width: 100%; }
@@ -398,7 +417,8 @@ img, video, iframe, embed {
 @media (max-width: 480px) {
   html { font-size: 14px; }
   .nav-container { padding: 0 1rem; }
-  .glass-card { padding: 1rem; }
+  .glass-card { max-width: 100%; padding: 1rem; }
+  .container, .content-section { padding: 1rem; }
   .grid { gap: 1rem; }
 }
 
