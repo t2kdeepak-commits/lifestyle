@@ -284,7 +284,7 @@ img, video, iframe, embed {
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  
   min-height: 320px;
 }
 
