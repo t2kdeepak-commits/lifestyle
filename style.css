@@ -322,7 +322,7 @@ img {
 .article-header { text-align: center; margin-bottom: 3rem; }
 .article-meta { color: var(--color-text-light); font-size: 0.9rem; margin-top: 1rem; }
 .article-content {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   width: 100%;
   word-wrap: break-word;
@@ -338,7 +338,7 @@ img {
   flex-wrap: wrap;
   gap: 1.25rem;
   margin: 3rem auto;
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
