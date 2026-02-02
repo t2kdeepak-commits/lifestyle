@@ -74,6 +74,11 @@ img, video, iframe, embed {
   border-radius: 12px;
 }
 
+
+img {
+  aspect-ratio: attr(width) / attr(height);
+  content-visibility: auto;
+}
 /* Glassmorphic Navigation */
 .navbar {
   position: sticky;
@@ -333,6 +338,9 @@ img, video, iframe, embed {
   flex-wrap: wrap;
   gap: 1rem;
   margin: 3rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2rem;
   background: var(--glass-bg);
   backdrop-filter: blur(20px);
@@ -380,18 +388,23 @@ img, video, iframe, embed {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .grid { gap: 1.5rem; }
+  .body{ 
+     background-attachment: fixed;
+  }
 }
 
 @media (max-width: 768px) {
   .mobile-menu-toggle { display: block; }
-  .nav-menu { display: none; width: 100%; flex-direction: column; gap: 0; margin-top: 1rem; }
+  .nav-menu { display: none; width: 100%; flex-direction: column; gap: 0; margin-top: 1rem; border-radius: 12px; overflow: hidden; }
   .nav-menu.active { display: flex; }
   .nav-menu a { width: 100%; text-align: center; padding: 1rem; }
   .container { padding: 2rem 1rem; }
   .glass-card { padding: 1.5rem; }
-  .hero { padding: 3rem 1rem; min-height: 50vh; }
-  .page-navigation { flex-direction: column; }
-  .nav-link { width: 100%; }
+  .hero { padding: 3rem 1rem; min-height: auto; text-align: center;}
+  .page-navigation { flex-direction: column; align-items: center; gap: 1.25rem; }
+  .nav-link { width: 100%; justify-content: center;}
+  
+
 }
 
 @media (max-width: 480px) {
