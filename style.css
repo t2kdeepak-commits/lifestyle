@@ -350,7 +350,7 @@ img {
   width: 100%;
 }
 
-.nav-link { flex: 1; min-width: 200px; }
+.nav-link { flex: 1; max-width: 800px; }
 
 /* Footer */
 .footer {
