@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://intentionaldaily.vercel.app/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://intentionaldaily.vercel.app/blog/</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/blog/benefits-of-simple-living/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/blog/build-good-habits/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/blog/morning-routine-mistakes/</loc>
+  </url>
+
+  <!-- Daily Habits -->
+  <url>
+    <loc>https://intentionaldaily.vercel.app/daily-habits/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/daily-habits/morning-habits/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/daily-habits/evening-habits/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/daily-habits/healthy-mindset/</loc>
+  </url>
+
+  <!-- Morning Routine -->
+  <url>
+    <loc>https://intentionaldaily.vercel.app/morning-routine/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/morning-routine/mindfulness-routine/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/morning-routine/planning-your-day/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/morning-routine/wake-up-routine/</loc>
+  </url>
+
+  <!-- Productivity -->
+  <url>
+    <loc>https://intentionaldaily.vercel.app/productivity/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/productivity/avoid-distractions/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/productivity/focus-techniques/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/productivity/time-management/</loc>
+  </url>
+
+  <!-- Simple Living -->
+  <url>
+    <loc>https://intentionaldaily.vercel.app/simple-living/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/simple-living/decluttering-life/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/simple-living/intentional-living/</loc>
+  </url>
+
+  <url>
+    <loc>https://intentionaldaily.vercel.app/simple-living/minimalist-living/</loc>
+  </url>
+
+</urlset>

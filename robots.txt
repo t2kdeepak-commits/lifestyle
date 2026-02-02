@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intentionaldaily.vercel.app/sitemap.xml
