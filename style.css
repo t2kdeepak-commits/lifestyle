@@ -337,7 +337,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -401,8 +401,8 @@ img {
   .container { padding: 2rem 1rem; }
   .glass-card { padding: 1.5rem; }
   .hero { padding: 3rem 1rem; min-height: auto; text-align: center;}
-  .page-navigation { flex-direction: column; align-items: center; gap: 1.25rem; }
-  .nav-link { width: 100%; justify-content: center;}
+  .page-navigation { flex-direction: column; align-items: center; gap: 1.25rem;padding:1.5rem 1rem }
+  .nav-link { width: 100%; justify-content: center; display: flex; align-items: center}
   
 
 }
